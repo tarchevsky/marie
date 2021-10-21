@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/select.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Neuroseminary - семинары, методики и игры по нейропсихологии</title>
+</head>
+
+<body>
+
+
+    <div class="first-block">
+        <!-- Header start -->
+        <header class="header__main">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="autor">Мария Рахмани-Тарчевская</div>
+                    <nav class="menu">
+                        <a href="#specialist" class="menu__item">Обо мне</a>
+                        <a href="##" class="menu__item">Бесплатные материалы</a>
+                        <a href="##" class="menu__item">Методики</a>
+                        <a href="##" class="menu__item" id="myModal myInput" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Связаться</a>
+                        <p class="menu__item menu__close">Закрыть</p>
+                    </nav>
+                    <div class="hamburger">
+                        <div class="hamburger-menu">
+                            <div class="hamburger-menu__inner">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal start -->
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Свяжитесь с нами</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Закрыть"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Form start -->
+
+                            <div class="wrapper">
+                                <div class="form">
+                                    <form action="#" id="form" class="form__body">
+                                        <div class="form__item">
+                                            <label for="formName" class="form__label">Имя*:</label>
+                                            <input id="formName" type="text" name="name" class="form__input _req">
+                                        </div>
+                                        <div class="form__item">
+                                            <label for="formEmail" class="form__label">E-mail*:</label>
+                                            <input id="formEmail" type="text" name="email" class="form__input _req _email">
+                                        </div>
+                                        <div class="form__item">
+                                            <label for="formEmail" class="form__label">Телефон:</label>
+                                            <input id="formEmail" type="text" name="email" class="form__input _req _email">
+                                        </div>
+                                        <div class="form__item">
+                                            <div class="form__label">Родитель или специалист?</div>
+                                            <div class="options">
+                                                <div class="options__item">
+                                                    <input id="formRightHanded" checked type="radio" value="right" name="hand" class="options__input">
+                                                    <label for="formRightHanded" class="options__label"><span>Родитель</span></label>
+                                                </div>
+                                                <div class="options__item">
+                                                    <input id="formLeftHanded" type="radio" value="left" name="hand" class="options__input">
+                                                    <label for="formLeftHanded" class="options__label"><span>Специалист</span></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form__item">
+                                            <label for="formMessage" class="form__label">Сообщение:</label>
+                                            <textarea name="message" id="formMessage" class="form__input"></textarea>
+                                        </div>
+                                        <div class="form__item">
+                                            <div class="checkbox">
+                                                <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req">
+                                                <label for="formAgreement" class="checkbox__label"><span>Я даю свое согласие на обработку персональных данных в соответствии с <a href="">Условиями</a>*</span></label>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="form__button">Отправить</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <!-- Form end -->
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary button--width"
+                                data-bs-dismiss="modal">Закрыть</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal end -->
+
+        </header>
+
+        <!-- Header end -->
+
+        <!-- Offer start -->
+        <div class="offer">
+            <div class="container">
+                <div class="offer__inner">
+                    <div class="offer__text">
+                        <!-- <p class="offer__sup">Проект Марии Рахмани-Тарчевской</p> -->
+                        <h3 class="offer__heading">Нейропсихолог</h3>
+                        <p class="offer__sub">Твой мозг - твой главный рабочий инструмент.<br> Но что делать, если тебе
+                            трудно освоить новое, ты чувствуешь, что не выдерживаешь нагрузку.<br> Внимание
+                            рассеивается, всё забываешь.<br><br>
+                            Представь, твоя продуктивность в разы увеличится уже сегодня?
+                        </p>
+                        <!-- <button class="offer__btn">Кнопка</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Offer end -->
+    </div>
+
+    <!-- Presentation start -->
+
+    <section class="presentation">
+        <div class="container">
+            <div class="presentation__inner">
+                <div class="presentation__text">
+                    <h4 class="presentation__heading">Как это работает</h4>
+                    <p>
+                        <strong>Твой мозг каждую секунду посылает сигналы. Ты выполняешь задачи, в этом участвуют три
+                            блока
+                            мозга, обеспечивая:</strong>
+                    </p>
+                    <ul>
+                        <li>- тонус</li>
+                        <li>- планирование и контроль</li>
+                        <li>- переработку и хранение информации от среды</li>
+                    </ul>
+                    <p><strong>Будь продуктивным!</strong></p>
+                </div>
+                <div class="presentation__img">
+                    <div class="presentation__img--wrapper"><img src="img/src/brainformasha-blue2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Presentation end -->
+
+    <!-- About brain start -->
+
+    <div class="brain">
+        <div class="container">
+            <header class="brain__heading">Решение есть</header>
+            <div class="brain__inner">
+                <div class="brain__1">
+                    <h5 class="brain__heading">Нейроны</h3>
+                        <p class="brain__text">Это клетки мозга.<br>Они контактируют друг с другом</p>
+                </div>
+                <div class="brain__2">
+                    <h5 class="brain__heading">Дендриты</h3>
+                        <p class="brain__text">Сигналы между нейронами и синопсами<br> передаются по дендратам,
+                            отросткам</p>
+                </div>
+                <div class="brain__3">
+                    <h5 class="brain__heading">Синапсы</h3>
+                        <p class="brain__text">Это места контактов нейронов.<br> Больше синапсов - выше интеллект.</p>
+                </div>
+            </div>
+            <div class="brain__line"></div>
+            <div class="brain__result">
+                Чтобы быть продуктивным, надо "растить дендритные деревья".<br> Это за счет нейропластичности, но у
+                детей она повыше, чем у взрослых.<br><br> <strong>Как это делать?</strong> - выполнять новые задачи
+                по-новому, уметь энергоёмко обучаться, выполнять специальные упражнения.
+            </div>
+        </div>
+    </div>
+
+    <!-- About brain end -->
+
+    <!-- Free starter start -->
+
+    <div class="starter">
+        <header class="starter__heading">
+            Давай растить твои синапсы!
+        </header>
+        <div class="container">
+            <div class="starter__inner">
+                <div class="starter__img"><img src="img/dest/1.webp" alt="" srcset=""></div>
+                <div class="starter__materials">
+                    <div class="starter__item">Раз, два, три, сравни и забери!</div>
+                    <div class="starter__item">Внимание! Нейропсихолог на связи</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Free starter end -->
+
+    <!-- About neuro start -->
+
+    <section class="neuro">
+        <div class="container">
+            <div class="neuro__inner">
+                <div class="neuro__item">
+                    <h5 class="neuro__heading">Что такое нейропсихология?</h4>
+                        <p class="neuro__about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus quos
+                            quae error incidunt qui, ab cumque aliquam officiis asperiores et dicta minima animi velit
+                            magnam.</p>
+                </div>
+                <div class="neuro__item">
+                    <h5 class="neuro__heading">Дети или взрослые?</h4>
+                        <p class="neuro__about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus quos
+                            quae error incidunt qui, ab cumque aliquam officiis asperiores et dicta minima animi velit
+                            magnam.</p>
+                </div>
+                <div class="neuro__item">
+                    <h5 class="neuro__heading">Мои методы</h4>
+                        <p class="neuro__about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus quos
+                            quae error incidunt qui, ab cumque aliquam officiis asperiores et dicta minima animi velit
+                            magnam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About neuro end -->
+
+    <!-- Target start -->
+
+    <section class="target">
+        <div class="container">
+            <div class="target__inner">
+                <div class="target__heading">
+                    <h4>Детям:<br> <span class="target__heading--sub">нейропсихология.</span></h4>
+                </div>
+                <div class="target__text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><br> Ea ipsum explicabo alias illum
+                        dolor non, nisi voluptas voluptates quas architecto cum eum quaerat facilis iste.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="target--second">
+        <div class="container">
+            <div class="target__inner">
+                <div class="target__heading">
+                    <h4>Родителям:<br><span class="target__heading--sub">тренинг нейронов</span></h4>
+                </div>
+                <div class="target__text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><br> Ea ipsum explicabo alias illum
+                        dolor non, nisi voluptas voluptates quas architecto cum eum quaerat facilis iste.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="target--second">
+        <div class="container">
+            <div class="target__inner">
+                <div class="target__heading">
+                    <h4>Специалистам:<br> <span class="target__heading--sub">супервизии.</span></h4>
+                </div>
+                <div class="target__text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><br> Ea ipsum explicabo alias illum
+                        dolor non, nisi voluptas voluptates quas architecto cum eum quaerat facilis iste.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="target--second">
+        <div class="container">
+            <div class="target__inner">
+                <div class="target__heading">
+                    <h4>Для бизнеса:<br> <span class="target__heading--sub">супервизии.</span></h4>
+                </div>
+                <div class="target__text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><br> Ea ipsum explicabo alias illum
+                        dolor non, nisi voluptas voluptates quas architecto cum eum quaerat facilis iste.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target end -->
+
+    <!-- Squared start -->
+
+    <div class="squared">
+        <div class="container">
+            <div class="squared__inner">
+                <div class="squared__item">
+                    <div class="squared__heading">
+                        <h4>Мерч</h4>
+                    </div>
+                    <div class="squared__text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatum corporis, unde
+                            aliquid temporibus delectus, ad animi officia, nulla doloribus incidunt amet veniam quia
+                            neque?</p>
+                    </div>
+                </div>
+                <div class="squared__item">
+                    <div class="squared__heading">
+                        <h4>Heading</h4>
+                    </div>
+                    <div class="squared__text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatum corporis, unde
+                            aliquid temporibus delectus, ad animi officia, nulla doloribus incidunt amet veniam quia
+                            neque?</p>
+                    </div>
+                </div>
+                <div class="squared__item">
+                    <div class="squared__heading">
+                        <h4>Heading</h4>
+                    </div>
+                    <div class="squared__text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatum corporis, unde
+                            aliquid temporibus delectus, ad animi officia, nulla doloribus incidunt amet veniam quia
+                            neque?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Squared end -->
+
+    <!-- Video-carousel start -->
+
+    <div class="youtube">
+        <header class="youtube__heading">Я в СМИ</header>
+        <p class="youtube__sub">Первый канал.<br><br>Это ролики с нейроупражнениями для передачи Доброе утро</p>
+        <div class="container">
+            <div class="youtube-carousel">
+                <div>
+                    <video poster="img/src/video - 1.jpg" preload="auto" controls src="video/Blow off.mp4"
+                        type="video/mp4"></video>
+                </div>
+                <div>
+                    <video poster="img/src/video - 2.jpg" preload="auto" controls src="video/Dog.mp4"
+                        type="video/mp4"></video>
+                </div>
+                <div>
+                    <video poster="img/src/video - 3.jpg" preload="auto" controls src="video/Funny pencils.mp4"
+                        type="video/mp4"></video>
+                </div>
+                <div>
+                    <video poster="img/src/video - 4.jpg" preload="auto" controls src="video/Lock.mp4"
+                        type="video/mp4"></video>
+                </div>
+                <div>
+                    <video poster="img/src/video - 5.jpg" preload="auto" controls src="video/Hare and lollipop.mp4"
+                        type="video/mp4"></video>
+                </div>
+                <div>
+                    <video preload="auto" controls src="video/Pouches.mp4" type="video/mp4"></video>
+                </div>
+                <div>
+                    <video poster="img/src/video - 6.jpg" controls src="video/One, two, free.mp4"
+                        type="video/mp4"></video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video-carousel end -->
+
+    <!-- Specialist start -->
+
+    <div class="specialist" id="specialist">
+        <div class="container">
+            <div class="specialist__inner">
+                <div class="specialist__img"><img src="img/src/3.jpg" alt=""></div>
+                <div class="specialist__text">
+                    <h5 class="specialist__heading">Меня зовут Мария и я нейропсихолог</h5>
+                    <h6>Нейропсихолог:</h6>
+                    <p>открыла и закрыла свой детский центр, чтобы полностью изменить подход к работе и расширить свой
+                        профиль</p>
+                    <h6>Автор нейроигр и пособий:</h6>
+                    <ul>
+                        <li>- Суммарный тираж 7000 экземпляров</li>
+                        <li>- Спикер-нейропсихолог в <a href="">neuroseminary.ru</a> </li>
+                        <li>- Проведено более 50 Семинаров для специалистов логопедов, психологов, педагогов в Москве,
+                            Питере, Казани, Рязани, Ярославле, Нижний Новгород в партнёрстве с Ульяновой Анастасией</li>
+                    </ul>
+                    <div class="specialist__education">
+                        <h6>Моё образование:</h6>
+                        <ul>
+                            <li>- МГУ им. Ломоносова</li>
+                            <li>- ИПИКП</li>
+                            <li>- Стажировка в НИЦ детской нейропсихологии им. А.Р.Лурия</li>
+                        </ul>
+                    </div>
+                    <h6>Композитор/пианист:</h6>
+                    <p>Автор более 100 музыкальный композиций, сама пишу аранжировки</p>
+                    <h6>Психолог - продюсер в TEZISCAM:</h6>
+                    <p>Снимаем видеоинтервью для вашего дела и души</p>
+                    <div class="specialist__socials">
+                        <a href="https://www.instagram.com/maryannwithlove/"><svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="104px"
+                            height="104px">
+                            <path
+                                d="M 7.546875 0 C 3.390625 0 0 3.390625 0 7.546875 L 0 18.453125 C 0 22.609375 3.390625 26 7.546875 26 L 18.453125 26 C 22.609375 26 26 22.609375 26 18.453125 L 26 7.546875 C 26 3.390625 22.609375 0 18.453125 0 Z M 7.546875 2 L 18.453125 2 C 21.527344 2 24 4.46875 24 7.546875 L 24 18.453125 C 24 21.527344 21.53125 24 18.453125 24 L 7.546875 24 C 4.472656 24 2 21.53125 2 18.453125 L 2 7.546875 C 2 4.472656 4.46875 2 7.546875 2 Z M 20.5 4 C 19.671875 4 19 4.671875 19 5.5 C 19 6.328125 19.671875 7 20.5 7 C 21.328125 7 22 6.328125 22 5.5 C 22 4.671875 21.328125 4 20.5 4 Z M 13 6 C 9.144531 6 6 9.144531 6 13 C 6 16.855469 9.144531 20 13 20 C 16.855469 20 20 16.855469 20 13 C 20 9.144531 16.855469 6 13 6 Z M 13 8 C 15.773438 8 18 10.226563 18 13 C 18 15.773438 15.773438 18 13 18 C 10.226563 18 8 15.773438 8 13 C 8 10.226563 10.226563 8 13 8 Z" />
+                        </svg></a>
+                        <a href="https://wa.me/79160921215"><svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="96px"
+                            height="96px">
+                            <path fill-rule="evenodd"
+                                d="M 24.503906 7.503906 C 22.246094 5.246094 19.246094 4 16.050781 4 C 9.464844 4 4.101563 9.359375 4.101563 15.945313 C 4.097656 18.050781 4.648438 20.105469 5.695313 21.917969 L 4 28.109375 L 10.335938 26.445313 C 12.078125 27.398438 14.046875 27.898438 16.046875 27.902344 L 16.050781 27.902344 C 22.636719 27.902344 27.996094 22.542969 28 15.953125 C 28 12.761719 26.757813 9.761719 24.503906 7.503906 Z M 16.050781 25.882813 L 16.046875 25.882813 C 14.265625 25.882813 12.515625 25.402344 10.992188 24.5 L 10.628906 24.285156 L 6.867188 25.269531 L 7.871094 21.605469 L 7.636719 21.230469 C 6.640625 19.648438 6.117188 17.820313 6.117188 15.945313 C 6.117188 10.472656 10.574219 6.019531 16.054688 6.019531 C 18.707031 6.019531 21.199219 7.054688 23.074219 8.929688 C 24.949219 10.808594 25.980469 13.300781 25.980469 15.953125 C 25.980469 21.429688 21.523438 25.882813 16.050781 25.882813 Z M 21.496094 18.445313 C 21.199219 18.296875 19.730469 17.574219 19.457031 17.476563 C 19.183594 17.375 18.984375 17.328125 18.785156 17.625 C 18.585938 17.925781 18.015625 18.597656 17.839844 18.796875 C 17.667969 18.992188 17.492188 19.019531 17.195313 18.871094 C 16.894531 18.722656 15.933594 18.40625 14.792969 17.386719 C 13.90625 16.597656 13.304688 15.617188 13.132813 15.320313 C 12.957031 15.019531 13.113281 14.859375 13.261719 14.710938 C 13.398438 14.578125 13.5625 14.363281 13.710938 14.1875 C 13.859375 14.015625 13.910156 13.890625 14.011719 13.691406 C 14.109375 13.492188 14.058594 13.316406 13.984375 13.167969 C 13.910156 13.019531 13.3125 11.546875 13.0625 10.949219 C 12.820313 10.367188 12.574219 10.449219 12.390625 10.4375 C 12.21875 10.429688 12.019531 10.429688 11.820313 10.429688 C 11.621094 10.429688 11.296875 10.503906 11.023438 10.804688 C 10.75 11.101563 9.980469 11.824219 9.980469 13.292969 C 9.980469 14.761719 11.050781 16.183594 11.199219 16.382813 C 11.347656 16.578125 13.304688 19.59375 16.300781 20.886719 C 17.011719 21.195313 17.566406 21.378906 18 21.515625 C 18.714844 21.742188 19.367188 21.710938 19.882813 21.636719 C 20.457031 21.550781 21.648438 20.914063 21.898438 20.214844 C 22.144531 19.519531 22.144531 18.921875 22.070313 18.796875 C 21.996094 18.671875 21.796875 18.597656 21.496094 18.445313 Z" />
+                        </svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Specialist end -->
+
+    <!-- Accordion start -->
+
+    <div class="accordion__wrapper">
+
+        <div class="container">
+
+            <div class="accordion__inner">
+
+                <div class="accordion accordion-flush" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Accordion Item #1
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until
+                                the
+                                collapse
+                                plugin adds the appropriate classes that we use to style each element. These classes
+                                control
+                                the
+                                overall appearance, as well as the showing and hiding via CSS transitions. You can
+                                modify
+                                any of
+                                this with custom CSS or overriding our default variables. It's also worth noting that
+                                just
+                                about
+                                any
+                                HTML can go within the <code>.accordion-body</code>, though the transition does limit
+                                overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Accordion Item #2
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                until
+                                the
+                                collapse plugin adds the appropriate classes that we use to style each element. These
+                                classes
+                                control the overall appearance, as well as the showing and hiding via CSS transitions.
+                                You
+                                can
+                                modify any of this with custom CSS or overriding our default variables. It's also worth
+                                noting
+                                that
+                                just about any HTML can go within the <code>.accordion-body</code>, though the
+                                transition
+                                does
+                                limit
+                                overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                                the
+                                collapse plugin adds the appropriate classes that we use to style each element. These
+                                classes
+                                control the overall appearance, as well as the showing and hiding via CSS transitions.
+                                You
+                                can
+                                modify any of this with custom CSS or overriding our default variables. It's also worth
+                                noting
+                                that
+                                just about any HTML can go within the <code>.accordion-body</code>, though the
+                                transition
+                                does
+                                limit
+                                overflow.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Accordion end -->
+
+    <!-- Presentation start -->
+
+    <section class="presentation">
+        <div class="container">
+            <div class="presentation__inner">
+                <div class="presentation__text">
+                    <h4 class="presentation__heading">Нейроигры, методики</h4>
+                    <p class="presentation__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><br>Expedita similique mollitia,
+                        consectetur, nostrum fugiat iure porro eligendi tempore, corrupti alias velit delectus nisi sit
+                        maiores debitis architecto sed itaque commodi dolores obcaecati.<br><br> Alias, blanditiis
+                        sit.<br><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br><br> Dolores minima et
+                        porro autem debitis consequatur, atque numquam molestiae quia sunt iure dolor sed voluptatem
+                        eius.
+                    </p>
+                </div>
+                <div class="presentation__img">
+                    <div class="presentation__img--wrapper"><img src="img/src/neuropsychologist in touch.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Presentation end -->
+
+    <!-- Footer start -->
+
+    <footer class="site-footer">
+        <div class="container">
+
+            <div class="bg-white pt-4 sm:pt-10 lg:pt-12">
+                <footer class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+                    <div class="flex flex-col md:flex-row justify-between items-center border-t border-b gap-4 py-6">
+                        <!-- nav - start -->
+                        <nav class="flex flex-wrap justify-center md:justify-start gap-x-4 gap-y-2 md:gap-6">
+                            <a href="#"
+                                class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100">Обо
+                                мне</a>
+                            <a href="#"
+                                class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100">Бесплатные
+                                материалы</a>
+                            <a href="#"
+                                class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100">Методики</a>
+                            <a href="#"
+                                class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100">Связаться</a>
+                        </nav>
+                        <!-- nav - end -->
+
+                        <!-- social - start -->
+                        <div class="flex gap-4">
+                            <a href="https://www.instagram.com/maryannwithlove/" target="_blank"
+                                class="text-gray-400 hover:text-gray-500 active:text-gray-600 transition duration-100">
+                                <svg class="w-5 h-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- social - end -->
+
+                    </div>
+
+                    <div class="text-gray-400 text-sm text-center py-8">
+                        © 2021 - Teziscam. All rights reserved.
+                    </div>
+                </footer>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Footer end -->
+
+    <!-- Scripts start -->
+
+    <script src="js/select.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/emblem.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
+
+    <!-- Scripts end -->
+
+</body>
+
+</html>

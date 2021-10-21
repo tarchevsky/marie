@@ -1,0 +1,233 @@
+// Media queries start
+
+@media (max-width: 1024px)
+   .container
+      padding: 0
+   .first-block
+      overflow: hidden
+   .header
+      &__inner
+         padding: 0 50px
+      &__main
+         padding-top: 50px
+   
+      &__inner
+         position: relative
+      &__nav
+         position: absolute
+         text-align: right
+         right: 0
+   .offer
+      &__inner
+         padding: 0 50px
+      &__heading
+         padding-top: 200px
+         font-size: 25px
+   .presentation
+      &__inner
+         grid-template-columns: 1fr
+         padding: 100px 50px 50px
+      &__heading
+         &::after
+            display: none
+      &__img
+         justify-content: center!important
+         padding: 50px 0 0
+         img
+            width: 300px
+   .brain
+      &__inner
+         padding: 0 50px
+         padding-top: 50px
+      &__result
+         margin: 0 50px
+         margin-top: 50px
+   .starter
+      &__inner
+         grid-template-columns: 1fr
+         padding: 0 50px
+      &__img
+         padding-top: 50px
+      &__materials
+         padding-top: 50px
+
+   .neuro
+      padding-top: 50px
+      &__inner
+         grid-template-columns: 1fr
+      &__item
+         border: none
+         padding: 0 50px
+   .target, .target--second
+      padding: 0 50px 50px
+   .target--second
+      padding: 50px 50px 50px
+   .youtube
+      padding: 0 50px
+      &__heading
+         padding-top: 50px
+      &__sub
+         padding-top: 50px
+   .specialist
+      &__inner
+         padding: 0 50px
+      &__img
+         // grid-column: span 2
+         justify-content: center
+         img
+            width: 300px
+   .accordion__wrapper
+      padding: 0 50px
+   .site-footer
+      padding: 0 50px
+
+@media(max-width: 767px)
+   .first-block
+      background: url('../img/dest/wowo2.webp') center center/cover no-repeat
+      // background-position-x: -9px
+      // background-size: 400px
+      height: 550px
+   .header
+      &__inner
+         grid-template-columns: 1fr 0.2fr
+   
+   .autor
+      color: #fff
+   .offer
+      &__inner
+         grid-template-columns: 1fr
+      &__heading
+         padding-top: 100px
+         color: #fff
+      &__sub
+         color: #fff
+      &__text
+         height: 315px
+      &__img
+         height: 400px
+   .brain
+      &__inner
+         grid-template-columns: 1fr
+   .target
+      &__inner
+         grid-template-columns: 1fr
+      &__heading
+         h4
+            font-size: 30px
+   .squared
+      &__inner
+         grid-template-columns: 1fr
+         gap: 20px
+   .specialist
+      &__inner
+         grid-template-columns: 1fr
+      &__img
+         grid-column: span 2
+         img
+            grid-column: span 2
+   
+@media(max-width: 426px)
+
+   h1
+      font-size: 30px
+
+   h2
+      font-size: 30px
+
+   h3
+      font-size: 25px
+
+   h4 
+      font-size: 20px
+
+   h5
+      font-size: 23px
+   .menu
+      display: none
+      position: absolute
+      height: 100vh
+      z-index: 200
+      background-color: white
+      top: 0
+      right: 0
+      align-items: flex-end
+      justify-content: flex-start
+      width: 80vw
+      padding: 50px 50px
+      transform: translateX(349px)
+      transition: all .3s ease
+      &__active
+         display: flex!important
+         transform: translateX(0px)
+         &::before
+            display: block
+            content: ''
+            position: absolute
+            height: 2px
+            width: 30px
+            background-color: #fff
+      &__close
+         display: block
+         color: #333
+
+
+   .hamburger
+      display: block
+      &-menu
+         position: relative
+         height: 20px
+         &__inner
+            display: block
+            position: absolute
+            bottom: 0
+            z-index: 100
+            transform: translateX(-50%)
+            right: 0
+            content: ''
+            height: 2px
+            width: 30px
+            background-color: #fff
+         &::before
+            position: absolute
+            top: 0
+            right: 0
+            display: block
+            content: ''
+            height: 2px
+            width: 30px
+            background-color: #fff
+         &::after
+            display: block
+            content: ''
+            position: absolute
+            top: 50%
+            right: 40%
+            transform: translateX(-50%)
+            transform: translateY(-50%)
+            height: 4px
+            width: 4px
+            border-radius: 100%
+            background-color: #fff
+   .autor
+      font-size: 12px
+   .first-block
+      background: url('../img/dest/wowo2.webp') center center/cover no-repeat
+      // background-position-x: -9px
+      // background-size: 400px
+      height: 650px
+   .specialist
+      padding-top: 50px
+      &__img
+         justify-self: center
+   .presentation
+      &__img
+         &--wrapper
+            img
+               width: 200px
+   .neuro
+      margin-bottom: 50px
+@media (max-width: 376px)
+   .offer
+      &__heading
+         padding-top: 100px
+// Media queries end

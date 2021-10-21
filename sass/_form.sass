@@ -1,0 +1,200 @@
+/* ------------------
+
+.form
+  max-width: 550px
+  margin: 0px auto
+  color: #333
+  padding: 30px 0
+
+  *
+    outline: none
+
+.form__body
+  position: relative
+
+  &::after
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(51, 51, 51, 0.9) url("../img/loading.gif") (center / 50px) no-repeat
+    opacity: 0
+    visibility: hidden
+    transition: all 0.5s ease 0s
+
+  &._sending::after
+    opacity: 1
+    visibility: visible
+
+.form__title
+  font-size: 40px
+  font-weight: 700
+  margin: 0px 0px 30px 0px
+
+.form__item
+  margin: 0px 0px 20px 0px
+
+.form__label
+  font-size: 18px
+  display: block
+  margin: 0px 0px 10px 0px
+
+.form__input
+  height: 50px
+  padding: 0px 20px
+  border-radius: 5px
+  width: 100%
+  font-size: 18px
+  transition: all 0.5s ease 0s
+  border: 1px solid #333
+
+  &:focus
+    box-shadow: 0 0 15px #926C5B
+
+  &._error
+    box-shadow: 0 0 15px red
+
+textarea.form__input
+  min-height: 120px
+  resize: vertical
+  padding: 20px
+
+.options
+  padding: 10px 0px 0px 0px
+
+.options__item
+  margin: 0px 0px 10px 0px
+
+.options__input
+  display: none
+
+  &:checked + .options__label::after
+    transform: scale(1)
+
+.options__label
+  display: inline-flex
+  font-size: 16px
+  line-height: 140%
+  align-items: center
+  position: relative
+  cursor: pointer
+
+  &::before
+    content: ""
+    align-self: flex-start
+    flex: 0 0 24px
+    height: 24px
+    background-color: #fff
+    border-radius: 50%
+    margin: 0px 10px 0px 0px
+    border: 1px solid #333
+
+  &::after
+    transition: transform 0.5s ease 0s
+    content: ""
+    position: absolute
+    top: 4px
+    left: 4px
+    width: 16px
+    height: 16px
+    background-color: #926C5B
+    border-radius: 50%
+    transform: scale(0)
+
+.file__item
+  position: relative
+
+.file__input
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  opacity: 0
+  font-size: 0
+  cursor: pointer
+
+.file__button
+  display: inline-flex
+  min-height: 40px
+  border-radius: 30px
+  justify-content: center
+  align-items: center
+  background-color: #333
+  padding: 0px 20px
+
+.file__preview
+  display: inline-block
+  max-width: 100px
+  padding: 10px 0px 0px 0px
+
+  img
+    max-width: 100%
+
+.checkbox._error .checkbox__label::before
+  box-shadow: 0 0 15px red
+
+.checkbox__input
+  display: none
+
+  &:checked + .checkbox__label::after
+    transform: scale(1)
+
+.checkbox__label
+  font-size: 16px
+  line-height: 140%
+  display: inline-flex
+  align-items: center
+  position: relative
+  cursor: pointer
+
+  &::before
+    content: ""
+    align-self: flex-start
+    flex: 0 0 24px
+    height: 24px
+    background-color: #fff
+    border-radius: 4px
+    margin: 0px 10px 0px 0px
+    border: 1px solid #333
+
+  &::after
+    transition: transform 0.5s ease 0s
+    content: ""
+    width: 16px
+    height: 16px
+    position: absolute
+    top: 4px
+    left: 4px
+    background-color: #926C5B
+    border-radius: 4px
+    border: 1px solid #333
+    transform: scale(0)
+
+  a
+    color: #926C5B
+
+.form__button
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  min-height: 60px
+  background-color: #333333e8
+  color: #fff
+  font-size: 18px
+  text-transform: uppercase
+  letter-spacing: 2px
+  font-weight: 700
+  cursor: pointer
+  transition: background-color 0.5s ease 0s
+  position: relative
+  top: 0
+
+  &:hover
+    background-color: #926C5B
+
+  &:active
+    top: 3px
