@@ -93,6 +93,8 @@
    
    .autor
       color: #fff
+      &__second
+         color: #333
    .offer
       &__inner
          grid-template-columns: 1fr
@@ -187,6 +189,10 @@
             height: 2px
             width: 30px
             background-color: #fff
+            &--second
+               background-clip: #333
+               &::before
+                  background-color: #333
          &::before
             position: absolute
             top: 0
