@@ -23,7 +23,7 @@
       &__heading
          padding-top: 200px
          font-size: 25px
-   .presentation
+   .presentation, .regular
       &__inner
          grid-template-columns: 1fr
          padding: 100px 50px 50px
@@ -81,7 +81,7 @@
    .site-footer
       padding: 0 50px
 
-@media(max-width: 767px)
+@media(max-width: 768px)
    .first-block
       background: url('../img/dest/wowo2.webp') center center/cover no-repeat
       // background-position-x: -9px
@@ -90,6 +90,70 @@
    .header
       &__inner
          grid-template-columns: 1fr 0.2fr
+   .menu
+      display: none
+      position: absolute
+      height: 100vh
+      z-index: 200
+      background-color: white
+      top: 0
+      right: 0
+      align-items: flex-end
+      justify-content: flex-start
+      width: 80vw
+      padding: 50px 50px
+      transform: translateX(349px)
+      transition: all .3s ease
+      &__active
+         display: flex!important
+         transform: translateX(0px)
+         &::before
+            display: block
+            content: ''
+            position: absolute
+            height: 2px
+            width: 30px
+            background-color: #fff
+      &__close
+         display: block
+         color: #333
+   .hamburger
+      display: block
+      &-menu
+         position: relative
+         height: 20px
+         &__inner
+            display: block
+            position: absolute
+            bottom: 0
+            z-index: 100
+            transform: translateX(-50%)
+            right: 0
+            content: ''
+            height: 2px
+            width: 30px
+            background-color: #fff
+         &::before
+            position: absolute
+            top: 0
+            right: 0
+            display: block
+            content: ''
+            height: 2px
+            width: 30px
+            background-color: #fff
+         &::after
+            display: block
+            content: ''
+            position: absolute
+            top: 50%
+            right: 40%
+            transform: translateX(-50%)
+            transform: translateY(-50%)
+            height: 4px
+            width: 4px
+            border-radius: 100%
+            background-color: #fff
    
    .autor
       color: #fff
@@ -144,111 +208,7 @@
 
    h5
       font-size: 23px
-   .menu
-      display: none
-      position: absolute
-      height: 100vh
-      z-index: 200
-      background-color: white
-      top: 0
-      right: 0
-      align-items: flex-end
-      justify-content: flex-start
-      width: 80vw
-      padding: 50px 50px
-      transform: translateX(349px)
-      transition: all .3s ease
-      &__active
-         display: flex!important
-         transform: translateX(0px)
-         &::before
-            display: block
-            content: ''
-            position: absolute
-            height: 2px
-            width: 30px
-            background-color: #fff
-      &__close
-         display: block
-         color: #333
 
-
-   .hamburger
-      display: block
-      &-menu
-         position: relative
-         height: 20px
-         &__inner
-            display: block
-            position: absolute
-            bottom: 0
-            z-index: 100
-            transform: translateX(-50%)
-            right: 0
-            content: ''
-            height: 2px
-            width: 30px
-            background-color: #fff
-         &::before
-            position: absolute
-            top: 0
-            right: 0
-            display: block
-            content: ''
-            height: 2px
-            width: 30px
-            background-color: #fff
-         &::after
-            display: block
-            content: ''
-            position: absolute
-            top: 50%
-            right: 40%
-            transform: translateX(-50%)
-            transform: translateY(-50%)
-            height: 4px
-            width: 4px
-            border-radius: 100%
-            background-color: #fff
-// Hamburger - second start 
-.hamburger-second
-   display: block
-   &-menu
-      position: relative
-      height: 20px
-      &__inner
-         display: block
-         position: absolute
-         bottom: 0
-         z-index: 100
-         transform: translateX(-50%)
-         right: 0
-         content: ''
-         height: 2px
-         width: 30px
-         background-color: #333
-      &::before
-         position: absolute
-         top: 0
-         right: 0
-         display: block
-         content: ''
-         height: 2px
-         width: 30px
-         background-color: #333
-      &::after
-         display: block
-         content: ''
-         position: absolute
-         top: 50%
-         right: 40%
-         transform: translateX(-50%)
-         transform: translateY(-50%)
-         height: 4px
-         width: 4px
-         border-radius: 100%
-         background-color: #333
-   // Hamburger - second end
    .autor
       font-size: 12px
    .first-block
@@ -260,7 +220,7 @@
       padding-top: 50px
       &__img
          justify-self: center
-   .presentation
+   .presentation, .regular
       &__img
          &--wrapper
             img
