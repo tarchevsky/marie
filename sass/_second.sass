@@ -12,6 +12,7 @@
    font-size: 40px!important
    font-weight: 400!important
    text-transform: uppercase
+   @include pt
 
 .hamburger-second
    display: none
@@ -23,7 +24,23 @@
       display: flex
       justify-content: center
       width: 100%
+      @include pt
       img
          width: 900px
+.links
+   &__heading
+         padding-top: 50px
+   &__text
+      padding-top: 50px
+
+// Price-table start
+
+.price
+   &__inner
+      @include grid
+   &__item
+      @include border
+
+// Price-table end
 
 //Regular pages / blocks end

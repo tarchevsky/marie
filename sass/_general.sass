@@ -14,6 +14,7 @@ body
 h1, h2, h3, h4, h5, h6
    font-family: $font2
    letter-spacing: 1px
+   margin: 0
 
 h1
    font-size: 62px
@@ -187,7 +188,7 @@ button
       display: grid
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
       gap: 30px
-      padding-top: 80px
+      @include pt
    &__heading
       position: relative
       text-transform: uppercase
@@ -245,7 +246,7 @@ button
 // About neuro - block
 
 .neuro
-   padding-top: 80px
+   @include pt
    margin-bottom: 100px
    &__inner
       display: grid
@@ -305,7 +306,7 @@ button
 // Squared
 
 .squared
-   padding-top: 80px
+   @include pt
    &__inner
       display: grid
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
@@ -339,7 +340,7 @@ button
 // About me start
 
 .specialist
-   padding-top: 80px
+   @include pt
    &__inner
       display: grid
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
