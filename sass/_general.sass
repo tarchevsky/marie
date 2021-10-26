@@ -247,7 +247,6 @@ button
 
 .neuro
    @include pt
-   margin-bottom: 100px
    &__inner
       display: grid
       grid-template-columns: repeat(auto-fill, minmax(400px, 1fr))
@@ -266,6 +265,7 @@ button
 .target
    position: relative
    padding-bottom: 50px
+   @include pt
    &::after
       display: block
       content: ''
@@ -379,8 +379,8 @@ button
       text-align: center
    &__sub
       text-align: center
-      padding-bottom: 50px
    &__carousel
+      @include pt
       video
          height: 400px!important
          min-height: 100%
