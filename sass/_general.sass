@@ -176,10 +176,63 @@ button
          img
             width: 350px
 
+//Presentation end
+
+// Price-table start
+
+.price
+   &__name
+      @include pt
+   &__inner
+      @include grid
+      @include pt
+   &__item
+      display: flex
+      flex-direction: column
+      justify-content: center
+      padding: 20px 30px
+      box-shadow: 0px 0 9px #dcd9d9
+      &:nth-child(2)
+         border-color: blue
+   &__heading
+      text-align: center
+   &__descr
+      padding-top: 30px
+   &__list
+      padding-top: 30px
+      padding-left: 0
+      li
+         position: relative
+         padding-left: 25px
+         padding-top: 10px
+         &::before
+            position: absolute
+            top: 50%
+            left: 0
+            transform: translateY(-50%)
+            display: block
+            content: ''
+            background: url('../img/dest/check.webp') center center/cover no-repeat
+            height: 20px
+            width: 20px
+      &--wrapper
+         display: flex
+         justify-content: center
+   &__number
+      text-align: center
+      font-size: 30px
+      font-weight: 200
+   &__ps
+      padding-top: 30px
+      text-align: center
+      font-size: 30px
+
+// Price-table end
+
 // Brain start
 
 .brain
-   padding-top: 50px
+   @include pt
    header
       font-size: 50px
       font-weight: 500
@@ -221,7 +274,7 @@ button
 // Starter start
 
 .starter
-   padding-top: 50px
+   @include pt
    &__heading
       font-size: 50px
       font-weight: 500
@@ -229,7 +282,7 @@ button
    &__inner
       display: grid
       grid-template-columns: repeat(auto-fit, minmax(400px, 1fr))
-      padding-top: 50px
+      @include pt
    &__img
       img
          width: 500px
@@ -351,8 +404,12 @@ button
          width: 360px
    &__text
       grid-column: span 2
+      p, ul
+         padding-top: 10px
    &__education
       font-size: 16px
+      h6
+         padding-top: 10px
    &__socials
       display: flex
       justify-content: flex-start
@@ -379,8 +436,9 @@ button
       text-align: center
    &__sub
       text-align: center
+   &__wrapper
+      padding-top: 50px
    &__carousel
-      @include pt
       video
          height: 400px!important
          min-height: 100%

@@ -26,10 +26,12 @@
    .presentation, .regular
       &__inner
          grid-template-columns: 1fr
-         padding: 100px 50px 50px
+         padding: 100px 50px 0px
       &__heading
          &::after
             display: none
+      &__text
+         @include pt
       &__img
          justify-content: center!important
          padding: 50px 0 0
@@ -77,9 +79,13 @@
          img
             width: 300px
    .methodics
-      width: 40vw
+      @include pt
+      width: 70vw
       &__wrapper
          justify-content: center
+   .price
+      &>.container
+         padding: 0 50px
    .accordion__wrapper
       padding: 0 50px
    .site-footer

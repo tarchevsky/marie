@@ -33,57 +33,6 @@
       img
          width: 900px
 
-// Price-table start
-
-.price
-   &__name
-      @include pt
-   &__inner
-      @include grid
-      @include pt
-   &__item
-      display: flex
-      flex-direction: column
-      justify-content: center
-      padding: 20px 30px
-      box-shadow: 0px 0 9px #dcd9d9
-      &:nth-child(2)
-         border-color: blue
-   &__heading
-      text-align: center
-   &__descr
-      @include pt
-   &__list
-      @include pt
-      padding-left: 0
-      li
-         position: relative
-         padding-left: 25px
-         padding-top: 10px
-         &::before
-            position: absolute
-            top: 50%
-            left: 0
-            transform: translateY(-50%)
-            display: block
-            content: ''
-            background: url('../img/dest/check.webp') center center/cover no-repeat
-            height: 20px
-            width: 20px
-      &--wrapper
-         display: flex
-         justify-content: center
-   &__number
-      text-align: center
-      font-size: 30px
-      font-weight: 200
-   &__ps
-      @include pt
-      text-align: center
-      font-size: 30px
-
-// Price-table end
-
 .links
    hr
       margin-top: 50px
