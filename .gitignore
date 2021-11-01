@@ -4,3 +4,5 @@ node_modules
 log
 #Ignore ds_store
 .DS_Store
+#Ignore files
+files
