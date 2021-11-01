@@ -179,6 +179,7 @@ $('.methodics').slick({
    arrows: false,
    dots: true,
 	slidesPerRow: 1,
+	adaptiveHeight: true,
    responsive: [
       {
         breakpoint: 1024,
