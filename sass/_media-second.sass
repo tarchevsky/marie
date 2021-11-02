@@ -1,76 +1,19 @@
 // Meida-second start
 
 @media (max-width: 1024px)
+   .author
+      &__second
+         a
+            color: #333
    .breadcrumbs
       &__inner
          padding: 0 50px
       &__item
          a
             font-size: 10px
-   .menu
-      display: none
-      position: absolute
-      height: 100vh
-      z-index: 200
-      background-color: white
-      top: 0
-      right: 0
-      align-items: flex-end
-      justify-content: flex-start
-      width: 80vw
-      padding: 50px 50px
-      transform: translateX(349px)
-      transition: all .3s ease
-      &__active
-         display: flex!important
-         transform: translateX(0px)
-         &::before
-            display: block
-            content: ''
-            position: absolute
-            height: 2px
-            width: 30px
-            background-color: #fff
-      &__close
-         display: block
-         color: #333
-   .hamburger-second
-      display: block
-      &-menu
-         position: relative
-         height: 20px
-         &__inner
-            display: block
-            position: absolute
-            bottom: 0
-            z-index: 100
-            transform: translateX(-50%)
-            right: 0
-            content: ''
-            height: 2px
-            width: 30px
-            background-color: #333
-         &::before
-            position: absolute
-            top: 0
-            right: 0
-            display: block
-            content: ''
-            height: 2px
-            width: 30px
-            background-color: #333
-         &::after
-            display: block
-            content: ''
-            position: absolute
-            top: 50%
-            right: 40%
-            transform: translateX(-50%)
-            transform: translateY(-50%)
-            height: 4px
-            width: 4px
-            border-radius: 100%
-            background-color: #333
+   .hamburger--second
+      span
+         background-color: #333
    .page
       &__inner
          @include inner

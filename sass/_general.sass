@@ -62,14 +62,13 @@ button
 // Header-main
 
 .header
-   &__main
-      position: relative
    &__inner
-      display: grid
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+      display: flex
+      justify-content: space-between
       color: #fff
+      position: relative
 
-.autor
+.author
    display: flex
    align-items: center
    color: #333
@@ -84,6 +83,7 @@ button
    flex-direction: column
    justify-content: flex-end
    padding-top: 70px
+   padding-left: 50px
    &__item
       text-align: right
    &__close
@@ -94,6 +94,12 @@ button
    &__second
       grid-column: span 3
 
+.modal
+   &-header
+      border: none
+   &-title
+      font-weight: 200
+
 .empty-block
    width: 50vw
 
@@ -103,11 +109,10 @@ button
 // First-block start
 
 .first-block
-   height: 100vh
-   background: url('../img/dest/wowo1.webp') center center/cover no-repeat
-   background-position-x: 753px
-   background-position-y: -65px
-   background-size: 700px
+   display: grid
+   grid-template-columns: 60% 40%
+   &__wrapper
+      margin: 0 3vw 0 7vw
 
 // First-block end
 
@@ -115,18 +120,13 @@ button
 
 .offer
    height: 80vh
-   display: flex
-   align-items: center
-   .container
-      position: relative
    &__inner
       display: grid
-      grid-template-columns: 1fr 1fr
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+   .container
+      position: relative
    &__text
-      display: flex
-      flex-direction: column
-      justify-content: center
-      height: 500px
+      grid-column: span 2
    &__sup
       letter-spacing: 2px
    &__sub
@@ -134,14 +134,13 @@ button
       color: #333
       letter-spacing: 2px
    &__heading
+      @include pt
       color: #333
       font-size: 40px
       font-weight: 400
       text-transform: uppercase
    &__btn
       margin-top: 40px
-   &__img
-      background: url('../img/dest/1.webp') center center/cover no-repeat
 
 // Presentation, regular blocks
 

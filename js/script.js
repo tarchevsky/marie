@@ -1,3 +1,5 @@
+"use strict";
+
 // Hamburger menu start
 
 
@@ -8,18 +10,18 @@ const menuActive = document.querySelector('.menu__active');
 
 ham.onclick = function() {
   // menu.classList.remove('menu');
+  ham.classList.add('hamburger__active');
   menu.classList.add('menu__active');
 };
 
 menuClose.onclick = function() {
+  ham.classList.remove('hamburger__active');
   menu.classList.remove('menu__active');
 };
 
 // Hamburger menu end
 
 // Form script start
-
-"use strict"
 
 document.addEventListener('DOMContentLoaded', function () {
 	const form = document.getElementById('form');

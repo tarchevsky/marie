@@ -21,11 +21,11 @@
 
 
     <div class="first-block">
-        <!-- Header start -->
-        <header class="header__main">
-            <div class="container">
+        <div class="first-block__wrapper">
+            <!-- Header start -->
+            <header class="header__main">
                 <div class="header__inner">
-                    <div class="autor"><a href="/">Мария Рахмани-Тарчевская</a></div>
+                    <div class="author"><a href="/">Мария Рахмани-Тарчевская</a></div>
                     <nav class="menu">
                         <a href="#specialist" class="menu__item">Обо мне</a>
                         <a href="free-content" class="menu__item">Бесплатные материалы</a>
@@ -35,113 +35,119 @@
                         <p class="menu__item menu__close">Закрыть</p>
                     </nav>
                     <div class="hamburger">
-                        <div class="hamburger-menu">
-                            <div class="hamburger-menu__inner">
-                            </div>
-                        </div>
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
                 </div>
-            </div>
-            <!-- Modal start -->
+                <!-- Modal start -->
 
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Свяжитесь с нами</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                aria-label="Закрыть"></button>
-                        </div>
-                        <div class="modal-body">
-                            <!-- Form start -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Свяжитесь с нами</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Закрыть"></button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- Form start -->
 
-                            <div class="wrapper">
-                                <div class="form">
-                                    <form action="#" id="form" class="form__body">
-                                        <div class="form__item">
-                                            <label for="formName" class="form__label">Имя*:</label>
-                                            <input id="formName" type="text" name="name" class="form__input _req">
-                                        </div>
-                                        <div class="form__item">
-                                            <label for="formEmail" class="form__label">E-mail*:</label>
-                                            <input id="formEmail" type="text" name="email"
-                                                class="form__input _req _email">
-                                        </div>
-                                        <div class="form__item">
-                                            <label for="formEmail" class="form__label">Телефон / whatsapp:</label>
-                                            <input id="formEmail" type="text" name="email"
-                                                class="form__input _req _email">
-                                        </div>
-                                        <div class="form__item">
-                                            <div class="form__label">Родитель или специалист?</div>
-                                            <div class="options">
-                                                <div class="options__item">
-                                                    <input id="formRightHanded" checked type="radio" value="right"
-                                                        name="hand" class="options__input">
-                                                    <label for="formRightHanded"
-                                                        class="options__label"><span>Родитель</span></label>
-                                                </div>
-                                                <div class="options__item">
-                                                    <input id="formLeftHanded" type="radio" value="left" name="hand"
-                                                        class="options__input">
-                                                    <label for="formLeftHanded"
-                                                        class="options__label"><span>Специалист</span></label>
+                                <div class="wrapper">
+                                    <div class="form">
+                                        <form action="#" id="form" class="form__body">
+                                            <div class="form__item">
+                                                <label for="formName" class="form__label">Имя*:</label>
+                                                <input id="formName" type="text" name="name"
+                                                    class="form__input _req">
+                                            </div>
+                                            <div class="form__item">
+                                                <label for="formEmail" class="form__label">E-mail*:</label>
+                                                <input id="formEmail" type="text" name="email"
+                                                    class="form__input _req _email">
+                                            </div>
+                                            <div class="form__item">
+                                                <label for="formEmail" class="form__label">Телефон /
+                                                    whatsapp:</label>
+                                                <input id="formEmail" type="text" name="email"
+                                                    class="form__input _req _email">
+                                            </div>
+                                            <div class="form__item">
+                                                <div class="form__label">Родитель или специалист?</div>
+                                                <div class="options">
+                                                    <div class="options__item">
+                                                        <input id="formRightHanded" checked type="radio"
+                                                            value="right" name="hand" class="options__input">
+                                                        <label for="formRightHanded"
+                                                            class="options__label"><span>Родитель</span></label>
+                                                    </div>
+                                                    <div class="options__item">
+                                                        <input id="formLeftHanded" type="radio" value="left"
+                                                            name="hand" class="options__input">
+                                                        <label for="formLeftHanded"
+                                                            class="options__label"><span>Специалист</span></label>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="form__item">
-                                            <label for="formMessage" class="form__label">Сообщение:</label>
-                                            <textarea name="message" id="formMessage" class="form__input"></textarea>
-                                        </div>
-                                        <div class="form__item">
-                                            <div class="checkbox">
-                                                <input id="formAgreement" checked type="checkbox" name="agreement"
-                                                    class="checkbox__input _req">
-                                                <label for="formAgreement" class="checkbox__label"><span>Я даю свое
-                                                        согласие на обработку персональных данных в соответствии с <a
-                                                            href="">Условиями</a>*</span></label>
+                                            <div class="form__item">
+                                                <label for="formMessage" class="form__label">Сообщение:</label>
+                                                <textarea name="message" id="formMessage"
+                                                    class="form__input"></textarea>
                                             </div>
-                                        </div>
-                                        <button type="submit" class="form__button">Отправить</button>
-                                    </form>
+                                            <div class="form__item">
+                                                <div class="checkbox">
+                                                    <input id="formAgreement" checked type="checkbox"
+                                                        name="agreement" class="checkbox__input _req">
+                                                    <label for="formAgreement" class="checkbox__label"><span>Я даю
+                                                            свое
+                                                            согласие на обработку персональных данных в соответствии
+                                                            с <a href="">Условиями</a>*</span></label>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="form__button">Отправить</button>
+                                        </form>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <!-- Form end -->
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary button--width"
-                                data-bs-dismiss="modal">Закрыть</button>
+                                <!-- Form end -->
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary button--width"
+                                    data-bs-dismiss="modal">Закрыть</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Modal end -->
+                <!-- Modal end -->
 
-        </header>
+            </header>
 
-        <!-- Header end -->
+            <!-- Header end -->
 
-        <!-- Offer start -->
-        <div class="offer">
-            <div class="container">
+            <!-- Offer start -->
+
+            <div class="offer">
                 <div class="offer__inner">
                     <div class="offer__text">
                         <!-- <p class="offer__sup">Проект Марии Рахмани-Тарчевской</p> -->
-                        <h3 class="offer__heading">Нейропсихолог<br> <span style="font-size: 14px;">психолог</span></h3>
-                        <p class="offer__sub">Твой мозг - твой главный рабочий инструмент.<br> Но что делать, если тебе
+                        <h3 class="offer__heading">Нейропсихолог<br> <span style="font-size: 14px;">психолог</span>
+                        </h3>
+                        <p class="offer__sub">Твой мозг - твой главный рабочий инструмент.<br> Но что делать, если
+                            тебе
                             трудно освоить новое, ты чувствуешь, что не выдерживаешь нагрузку.<br> Внимание
                             рассеивается, всё забываешь, неусидчив.<br><br>
                             Представь, твоя продуктивность в разы увеличится уже сегодня?
                         </p>
                         <!-- <button class="offer__btn">Кнопка</button> -->
                     </div>
+                    <!-- <div class="offer__img"><img src="img/dest/wowo1.webp" alt="" srcset=""></div> -->
                 </div>
             </div>
+            <!-- Offer end -->
         </div>
-        <!-- Offer end -->
+        <div class="first-block__img"><img src="img/dest/wowo1.webp" alt="" srcset=""></div>
     </div>
 
     <!-- Presentation start -->
@@ -418,8 +424,8 @@
             <div class="youtube__wrapper">
                 <div class="youtube-carousel">
                     <div>
-                        <video poster="img/dest/video - 1.webp" preload="auto" controls src="https://youtu.be/ResXcLClJ_4"
-                            type="video/mp4"></video>
+                        <video poster="img/dest/video - 1.webp" preload="auto" controls
+                            src="https://youtu.be/ResXcLClJ_4" type="video/mp4"></video>
                     </div>
                     <div>
                         <video poster="img/dest/video - 2.webp" preload="auto" controls src="video/Dog.mp4"
@@ -588,14 +594,34 @@
                             <img src="img/dest/one-two-three.webp" alt="" srcset="">
                             <div class="methodics__text">
                                 <h5 class="methodics__heading">Раз, два, три, сравни и забери!</h5>
-                                <p>Количество игроков: от 2 до 5.<br><br>Раз, два, три... семью на дачу собери! Но помни о том, что в машину помещается не больше трех человек, трех домашних питомцев и трех горшочков с растениями.<br><br> Задача — быстрее соперников найти среди разложенных на столе карт комбинацию из трех карт, которые различаются по одному, двум или трем признакам, и схватить их, предварительно совершив определенное действие. Кто соберет больше всех карт, тот и выиграл!<br><br>Игра развивает: внимание, память, мышление, зрительное восприятие, речь.<br><br>Помогает преодолевать импульсивность, осваивать операции сравнения, различать изображения по признаку «полное – частичное совпадение».<br><br>Предназначена для родителей с детьми и специалистов (нейропсихологов, психологов, логопедов, дефектологов, педагогов, воспитателей).</p>
+                                <p>Количество игроков: от 2 до 5.<br><br>Раз, два, три... семью на дачу собери! Но помни
+                                    о том, что в машину помещается не больше трех человек, трех домашних питомцев и трех
+                                    горшочков с растениями.<br><br> Задача — быстрее соперников найти среди разложенных
+                                    на столе карт комбинацию из трех карт, которые различаются по одному, двум или трем
+                                    признакам, и схватить их, предварительно совершив определенное действие. Кто соберет
+                                    больше всех карт, тот и выиграл!<br><br>Игра развивает: внимание, память, мышление,
+                                    зрительное восприятие, речь.<br><br>Помогает преодолевать импульсивность, осваивать
+                                    операции сравнения, различать изображения по признаку «полное – частичное
+                                    совпадение».<br><br>Предназначена для родителей с детьми и специалистов
+                                    (нейропсихологов, психологов, логопедов, дефектологов, педагогов, воспитателей).</p>
                             </div>
                         </div>
                         <div class="methodics__slide">
                             <img src="img/dest/jiraffe.webp" alt="" srcset="">
                             <div class="methodics__text">
                                 <h5 class="methodics__heading">Жирафики</h5>
-                                <p>Возраст от 5 лет, количество игроков 1-4.<br><br>В наборе 54 карточки и инструкция для детей, родителей и специалистов!<br><br>Острожно, вызывает "шевеление" мозгов! Нравятся как детям, так и взрослым. Игра развивает внимание, мышление, восприятие! А самое главное - формирует и закрепляет у ребёнка способность к программированию, регуляции и контролю собственной деятельности. Направлена на преодоление импульсивности.<br><br>Часто ли ваш ребенок сначала делает, а потом думает?<br><br>Такое поведение говорит об импульсивности в решениях - реакции без достаточного самоконтроля!<br><br>Именно на преодоление такой импульсивности направлена игра "Жирафики"! Играть можно тет-а-тет и в группе, п также понравится малышам в варианте привычного "мемори" (парочек). Игра развивает внимание, мышление, восприятие! А самое главное - формирует и закрепляет у ребёнка способность к программированию, регуляции и контролю собственной деятельности.</p>
+                                <p>Возраст от 5 лет, количество игроков 1-4.<br><br>В наборе 54 карточки и инструкция
+                                    для детей, родителей и специалистов!<br><br>Острожно, вызывает "шевеление" мозгов!
+                                    Нравятся как детям, так и взрослым. Игра развивает внимание, мышление, восприятие! А
+                                    самое главное - формирует и закрепляет у ребёнка способность к программированию,
+                                    регуляции и контролю собственной деятельности. Направлена на преодоление
+                                    импульсивности.<br><br>Часто ли ваш ребенок сначала делает, а потом
+                                    думает?<br><br>Такое поведение говорит об импульсивности в решениях - реакции без
+                                    достаточного самоконтроля!<br><br>Именно на преодоление такой импульсивности
+                                    направлена игра "Жирафики"! Играть можно тет-а-тет и в группе, п также понравится
+                                    малышам в варианте привычного "мемори" (парочек). Игра развивает внимание, мышление,
+                                    восприятие! А самое главное - формирует и закрепляет у ребёнка способность к
+                                    программированию, регуляции и контролю собственной деятельности.</p>
                             </div>
                         </div>
                     </div>

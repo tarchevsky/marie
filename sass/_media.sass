@@ -5,24 +5,88 @@
       padding: 0
    .first-block
       overflow: hidden
+      position: relative
+      display: grid
+      grid-template-columns: 1fr
+      background: url('../img/dest/wowo2.webp') center center/cover no-repeat
+      height: 550px
+      &__wrapper
+         margin-left: 3vw
+      &__img
+         display: none
    .header
       &__inner
-         padding: 0 50px
+         margin: 0 50px
       &__main
          padding-top: 50px
-   
-      &__inner
-         position: relative
       &__nav
-         position: absolute
          text-align: right
          right: 0
+   .author
+      a
+         color: #fff
+   .menu
+      position: fixed
+      height: 100vh
+      z-index: 200
+      background-color: white
+      top: 0
+      right: 0
+      align-items: flex-end
+      justify-content: flex-start
+      width: 80vw
+      padding: 50px 50px
+      transform: translateX(819px)
+      transition: all .3s ease
+      &__active
+         display: flex!important
+         transform: translateX(0px)
+         &::before
+            display: block
+            content: ''
+            position: absolute
+            height: 2px
+            width: 30px
+            background-color: #fff
+      &__close
+         display: block
+         color: #333
+   
+   .hamburger
+      display: block
+      position: absolute
+      top: 50%
+      right: 0px
+      transform: translateY(-50%)
+      height: 10px
+      span
+         display: block
+         content: ''
+         height: 2px
+         width: 30px
+         background-color: #fff
+         margin-bottom: 2px
+         transition: .4s all
+         &:last-child
+            margin-bottom: 0
+      &__active
+         span
+            margin-bottom: -2px
+            &:nth-child(1)
+               transform: translateY(3px) rotate(-45deg)
+            &:nth-child(2)
+               display: none
+            &:nth-child(3)
+               transform: translateY(3px) rotate(45deg)
    .offer
       &__inner
          padding: 0 50px
       &__heading
-         padding-top: 200px
          font-size: 25px
+         padding-top: 100px
+         color: #fff
+      &__sub
+         color: #fff
    .presentation, .regular
       &__inner
          grid-template-columns: 1fr
@@ -45,13 +109,15 @@
          margin: 0 50px
          margin-top: 50px
    .starter
+      padding: 50px 50px 0
       &__inner
          grid-template-columns: 1fr
-         padding: 0 50px
-      &__img
          padding-top: 50px
       &__materials
          padding-top: 50px
+      &__item
+         display: flex
+         justify-content: center
 
    .neuro
       padding-top: 50px
@@ -78,6 +144,9 @@
          justify-content: center
          img
             width: 300px
+   .games
+      &__inner
+         padding: 0 50px
    .price
       &>.container
          padding: 0 50px
@@ -87,93 +156,17 @@
       padding: 0 50px
 
 @media(max-width: 768px)
-   .first-block
-      background: url('../img/dest/wowo2.webp') center center/cover no-repeat
-      // background-position-x: -9px
-      // background-size: 400px
-      height: 550px
    .header
       &__inner
-         grid-template-columns: 1fr 0.2fr
-   .menu
-      display: none
-      position: absolute
-      height: 100vh
-      z-index: 200
-      background-color: white
-      top: 0
-      right: 0
-      align-items: flex-end
-      justify-content: flex-start
-      width: 80vw
-      padding: 50px 50px
-      transform: translateX(349px)
-      transition: all .3s ease
-      &__active
-         display: flex!important
-         transform: translateX(0px)
-         &::before
-            display: block
-            content: ''
-            position: absolute
-            height: 2px
-            width: 30px
-            background-color: #fff
-      &__close
-         display: block
-         color: #333
-   .hamburger
-      display: block
-      &-menu
-         position: relative
-         height: 20px
-         &__inner
-            display: block
-            position: absolute
-            bottom: 0
-            z-index: 100
-            transform: translateX(-50%)
-            right: 0
-            content: ''
-            height: 2px
-            width: 30px
-            background-color: #fff
-         &::before
-            position: absolute
-            top: 0
-            right: 0
-            display: block
-            content: ''
-            height: 2px
-            width: 30px
-            background-color: #fff
-         &::after
-            display: block
-            content: ''
-            position: absolute
-            top: 50%
-            right: 40%
-            transform: translateX(-50%)
-            transform: translateY(-50%)
-            height: 4px
-            width: 4px
-            border-radius: 100%
-            background-color: #fff
-   
-   .autor
-      a
-         color: #fff
+         display: flex
+         justify-content: space-between
+         flex-wrap: wrap
       &__second
          a
             color: #333
    .offer
       &__inner
          grid-template-columns: 1fr
-      &__heading
-         padding-top: 100px
-         color: #fff
-      &__sub
-         color: #fff
       &__text
          height: 315px
       &__img
@@ -216,7 +209,7 @@
    h5
       font-size: 23px
 
-   .autor
+   .author
       font-size: 12px
    .first-block
       background: url('../img/dest/wowo2.webp') center center/cover no-repeat
@@ -235,10 +228,17 @@
    .neuro
       margin-bottom: 50px
 @media (max-width: 375px)
+   button
+      width: 250px
    .offer
       height: 40vh
       &__heading
          padding-top: 100px
+   .starter
+      &__img
+         margin: 0 auto
+         img
+            width: 200px
 @media (max-width: 320px)
    .offer
       &__sub
