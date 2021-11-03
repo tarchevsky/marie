@@ -1,33 +1,35 @@
-$(document).ready(function(){
-   $('.feed-form').validate({
-       rules: {
-    // simple rule, converted to {required:true}
-    name: "required",
-    // compound rule
-    email: {
-      required: true,
-      email: true
+$(document).ready(function () {
+  $('.feed-form').validate({
+    rules: {
+      // simple rule, converted to {required:true}
+      name: "required",
+      // compound rule
+      email: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      name: "Пожалуйста, укажите своё имя",
+      email: {
+        required: "Нам нужна Ваша почта, чтобы связаться с Вами",
+        email: "Почта должна быть в формате: somemail@mail.ru or com"
+      }
     }
-  },
-  messages: {
-    name: "Пожалуйста, укажите своё имя",
-    email: {
-      required: "Нам нужна Ваша почта, чтобы связаться с Вами",
-      email: "Почта должна быть в формате: somemail@mail.ru or com"
-    }
-}
-   });
-   $('form').submit(function(e){
+  });
+  $('form').submit(function (e) {
     e.preventDefault();
     $.ajax({
-      type: 'POST',
-      url: '../mailer/smart.php',
+      type: "POST",
+      url: "mailer/smart.php",
       data: $(this).serialize()
-    }).done(funciton() {
+    }).done(function () {
       $(this).find("input").val("");
+      $('#consultation, #order').fadeOut();
+      $('.overlay, #thanks').fadeIn('slow');
 
       $('form').trigger('reset');
     });
     return false;
-   });
+  });
 });
