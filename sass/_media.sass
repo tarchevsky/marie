@@ -90,18 +90,19 @@
    .presentation, .regular
       &__inner
          grid-template-columns: 1fr
-         padding: 100px 50px 0px
+         padding: 30px 50px 0px
       &__heading
          &::after
             display: none
       &__text
-         @include pt
+         padding-top: 30px
       &__img
          justify-content: center!important
          padding: 50px 0 0
          img
             width: 100%
    .brain
+      padding-top: 30px
       &__inner
          padding: 0 50px
          padding-top: 50px
@@ -144,12 +145,20 @@
          justify-content: center
          img
             width: 300px
+
+   .methodics
+      &__wrapper
+         padding-top: 30px
    .games
       &__inner
          padding: 0 50px
    .price
       &>.container
          padding: 0 50px
+      &__inner
+         padding-top: 30px
+      &__name
+         padding-top: 30px
    .accordion__wrapper
       padding: 0 50px
    .site-footer
@@ -171,6 +180,12 @@
          height: 315px
       &__img
          height: 400px
+   .breadcrumbs
+      padding-top: 30px
+      &__item
+         padding: 0 3px
+         &--devider
+            display: none
    .brain
       &__inner
          grid-template-columns: 1fr
