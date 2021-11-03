@@ -82,7 +82,6 @@ $('.methodics').slick({
   dots: true,
   slidesPerRow: 1,
   adaptiveHeight: true,
-  rows: 2,
   responsive: [
     {
       breakpoint: 1024,
