@@ -27,7 +27,7 @@ $(document).ready(function () {
       $(this).find("input").val("");
       $('#consultation, #order').fadeOut();
       $('.overlay, #thanks').fadeIn('slow');
-
+      $('#exempleModal').fadeOut();
       $('form').trigger('reset');
     });
     return false;
