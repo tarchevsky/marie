@@ -73,18 +73,18 @@
                                         <form action="#" id="form" class="form__body">
                                             <div class="form__item">
                                                 <label for="formName" class="form__label">Имя*:</label>
-                                                <input id="formName" type="text" name="name" class="form__input _req">
+                                                <input id="formName" type="text" name="name" class="form__input">
                                             </div>
                                             <div class="form__item">
                                                 <label for="formEmail" class="form__label">E-mail*:</label>
                                                 <input id="formEmail" type="text" name="email"
-                                                    class="form__input _req _email">
+                                                    class="form__input">
                                             </div>
                                             <div class="form__item">
                                                 <label for="formPhone" class="form__label">Телефон /
                                                     whatsapp:</label>
                                                 <input id="formPhone" type="text" name="phone"
-                                                    class="form__input _req _phone">
+                                                    class="form__input">
                                             </div>
                                             <div class="form__item">
                                                 <div class="form__label">Родитель или специалист?</div>
@@ -108,16 +108,16 @@
                                                 <textarea name="message" id="formMessage"
                                                     class="form__input"></textarea>
                                             </div>
-                                            <div class="form__item">
+                                            <!-- <div class="form__item">
                                                 <div class="checkbox">
                                                     <input id="formAgreement" checked type="checkbox" name="agreement"
-                                                        class="checkbox__input _req">
+                                                        class="checkbox__input">
                                                     <label for="formAgreement" class="checkbox__label"><span>Я даю
                                                             свое
                                                             согласие на обработку персональных данных в соответствии
                                                             с <a href="">Условиями</a>*</span></label>
                                                 </div>
-                                            </div>
+                                            </div> -->
                                             <button type="submit" class="form__button">Отправить</button>
                                         </form>
                                     </div>
@@ -791,7 +791,8 @@
         <!-- Scripts start -->
         <script src="js/metrika.js"></script>
         <script src="js/select.js"></script>
-
+        <script src="js/form.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="js/slick.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
