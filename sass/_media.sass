@@ -18,7 +18,7 @@
       &__inner
          margin: 0 50px
       &__main
-         padding-top: 50px
+         @include ptmed
       &__nav
          text-align: right
          right: 0
@@ -80,10 +80,10 @@
                transform: translateY(3px) rotate(45deg)
    .offer
       &__inner
-         padding: 0 50px
+         @include inner
       &__heading
          font-size: 25px
-         padding-top: 100px
+         @include pt
          color: #fff
       &__sub
          color: #fff
@@ -95,17 +95,17 @@
          &::after
             display: none
       &__text
-         padding-top: 30px
+         @include ptmin
       &__img
          justify-content: center!important
          padding: 50px 0 0
          img
             width: 100%
    .brain
-      padding-top: 30px
+      @include ptmin
       &__inner
-         padding: 0 50px
-         padding-top: 50px
+         @include inner
+         @include ptmed
       &__result
          margin: 0 50px
          margin-top: 50px
@@ -113,30 +113,30 @@
       padding: 50px 50px 0
       &__inner
          grid-template-columns: 1fr
-         padding-top: 50px
+         @include ptmed
       &__materials
-         padding-top: 50px
+         @include ptmed
       &__item
          display: flex
          justify-content: center
 
    .neuro
-      padding-top: 50px
+      @include ptmed
       &__inner
          grid-template-columns: 1fr
       &__item
          border: none
-         padding: 0 50px
+         @include inner
    .target, .target--second
-      padding: 0 50px 50px
+      @include inner 50px
    .target--second
       padding: 50px 50px 50px
    .youtube
-      padding: 0 50px
+      @include inner
       &__heading
-         padding-top: 50px
+         @include ptmed
       &__sub
-         padding-top: 50px
+         @include ptmed
       &-carousel
          div
             iframe
@@ -144,7 +144,7 @@
                height: 100%
    .specialist
       &__inner
-         padding: 0 50px
+         @include inner
       &__img
          // grid-column: span 2
          justify-content: center
@@ -153,23 +153,23 @@
 
    .methodics
       &__wrapper
-         padding-top: 30px
+         @include ptmin
       &__slide, .slick-slide
          gap: 0
    .games
       &__inner
-         padding: 0 50px
+         @include inner
    .price
       &>.container
-         padding: 0 50px
+         @include inner
       &__inner
-         padding-top: 30px
+         @include ptmin
       &__name
-         padding-top: 30px
+         @include ptmin
    .accordion__wrapper
-      padding: 0 50px
+      @include inner
    .site-footer
-      padding: 0 50px
+      @include inner
 
 @media(max-width: 768px)
    .header
@@ -188,7 +188,7 @@
       &__img
          height: 400px
    .breadcrumbs
-      padding-top: 30px
+      @include ptmin
       &__item
          padding: 0 3px
          &--devider
@@ -239,7 +239,7 @@
       // background-size: 400px
       height: 650px
    .specialist
-      padding-top: 50px
+      @include ptmed
       &__img
          justify-self: center
    .presentation, .regular
@@ -255,7 +255,7 @@
    .offer
       height: 40vh
       &__heading
-         padding-top: 100px
+         @include pt
    .starter
       &__img
          margin: 0 auto

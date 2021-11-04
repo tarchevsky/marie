@@ -7,7 +7,7 @@
             color: #333
    .breadcrumbs
       &__inner
-         padding: 0 50px
+         @include inner
       &__item
          a
             font-size: 10px
@@ -29,8 +29,8 @@
       &__inner
          @include inner
       &__heading
-         padding-top: 30px
+         @include ptmin
       &__text
-         padding-top: 30px
+         @include ptmin
 
 // Media-second end
