@@ -62,25 +62,25 @@
 
                   <div class="consultation">
                      <form class="feed-form" action="##" method="">
-                         <div class=""form__item>
-                             <label for="name">Имя <sup>*</sup></label>
-                             <input name="name" id="name" type="name">
-                         </div>
-                         <div class=""form__item>
-                             <label for="phone">Телефон / whatsapp</label>
-                             <input name="phone" id="phone" type="number">
-                         </div>
-                         <div class=""form__item>
-                             <label for="email">Почта <sup>*</sup></label>
-                             <input name="email" id="email" type="email">
-                         </div>
-                         <div class=""form__item>
-                             <input type="submit">
-                         </div>
+                        <div class="" form__item>
+                           <label for="name">Имя <sup>*</sup></label>
+                           <input name="name" id="name" type="name">
+                        </div>
+                        <div class="" form__item>
+                           <label for="phone">Телефон / whatsapp</label>
+                           <input name="phone" id="phone" type="number">
+                        </div>
+                        <div class="" form__item>
+                           <label for="email">Почта <sup>*</sup></label>
+                           <input name="email" id="email" type="email">
+                        </div>
+                        <div class="" form__item>
+                           <input type="submit">
+                        </div>
                      </form>
-                 </div>
+                  </div>
 
-                 <!-- Form end -->
+                  <!-- Form end -->
                </div>
                <div class="modal-footer">
                   <button type="button" class="btn btn-secondary button--width" data-bs-dismiss="modal">Закрыть</button>
@@ -134,38 +134,49 @@
                <p class="regular__text">
                   1. <span class="regular__title">Простой уровень</span><br><br>
                   Инструкция:<br>
-                  Работай только с <strong>первыми тремя</strong> строчками. Вовремя остановись. По порядку называй
+                  Вовремя остановись. По порядку называй
                   только цвета шрифта, которым написаны слова.<br><br>
+                  <img style="display: block; margin: 0 auto;" src="../img/dest/strup-2.webp" alt="">
                   2. <span class="regular__title">Уровень посложнее</span><br><br>
                   Инструкция:<br>
-                  Работай только с первыми тремя строчками, от конца к началу, <strong>справа налево</strong>. Называй
+                  Работай от конца к началу строк, <strong>справа налево</strong>. Называй
                   только цвета шрифта слов по порядку, однако, если слово обведено любым способом - переключись и с
                   этого слова называй только сами слова, какими бы цветами они не были написаны. И так до следующего
                   переключения.<br><br>
+                  <img style="display: block; margin: 0 auto;" src="../img/dest/strup-2.webp" alt="">
                   3. <span class="regular__title">Уровень с переключением</span><br><br>
                   Инструкция:<br>
-                  Работай со всеми строчками по порядку, начиная с верхней, слева направо.<br>
+                  Работай, начиная с верхней строчки, слева направо.<br>
                   Начни называть цвета шрифта до тех пор, пока тебе не встретится слово, в котором цвет шрифта и само
                   слово, обозначающее цвет - <strong>совпадают</strong> (зеленым написано "зеленый", например).<br>
                   Как только встречаешь такое слово - переключись и начинай читать сами слова, игнорируя их цвет.<br>
                   <strong>Переключайся</strong> каждый раз, когда встречаешь такие слова (называй то цвет шрифта, то
                   слово, обозначающее цвет).<br><br>
+                  <img style="display: block; margin: 0 auto;" src="../img/dest/strup-1.webp" alt="">
                   4. <span class="regular__title">Самый сложный уровень</span><br><br>
                   Инструкция:<br>
                   Положи руки на стол или на колени ладонью вниз.<br>
-                  Работай со всеми строчками <strong>в обратном порядке, справа налево</strong>, начиная с
-                  нижней.<br><br>
+                  Работай <strong>в обратном порядке, справа налево</strong>, начиная с
+                  нижней строки.<br><br>
                   Делай всё то же самое, что и на предыдущем уровне, но, если встречаешь слово, обведенное в овал, то
                   поднимай левую руку, а если в прямоугольник - то правую.
                </p>
             </div>
             <div class="regular__img">
-               <div class="regular__img--wrapper"><img src="../img/dest/strup-task.webp" alt="">
+               <div class="regular__img--wrapper"><img src="../img/dest/strup-1.webp" alt="">
                </div>
             </div>
          </div>
       </div>
    </main>
+
+   <article class="more">
+      <div class="container">
+         <div class="more__inner">
+            <h6 class="more__heading">Хотите ещё упражнения?</h6>
+         </div>
+      </div>
+   </article>
 
    <div class="container">
       <div class="page__inner">
@@ -311,7 +322,17 @@
       <!-- Footer end -->
 
       <!-- Scripts start -->
-      
+
+      <script>
+         const img = document.getElementsByTagName('img');
+
+         for (let i in img) {
+            img[i].oncontextmenu = function () {
+               return false;
+            }
+         }
+      </script>
+
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <script src="../js/metrika.js"></script>
       <script src="../js/form.js"></script>

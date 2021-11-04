@@ -62,25 +62,25 @@
 
                   <div class="consultation">
                      <form class="feed-form" action="##" method="">
-                         <div class=""form__item>
-                             <label for="name">Имя <sup>*</sup></label>
-                             <input name="name" id="name" type="name">
-                         </div>
-                         <div class=""form__item>
-                             <label for="phone">Телефон / whatsapp</label>
-                             <input name="phone" id="phone" type="number">
-                         </div>
-                         <div class=""form__item>
-                             <label for="email">Почта <sup>*</sup></label>
-                             <input name="email" id="email" type="email">
-                         </div>
-                         <div class=""form__item>
-                             <input type="submit">
-                         </div>
+                        <div class="" form__item>
+                           <label for="name">Имя <sup>*</sup></label>
+                           <input name="name" id="name" type="name">
+                        </div>
+                        <div class="" form__item>
+                           <label for="phone">Телефон / whatsapp</label>
+                           <input name="phone" id="phone" type="number">
+                        </div>
+                        <div class="" form__item>
+                           <label for="email">Почта <sup>*</sup></label>
+                           <input name="email" id="email" type="email">
+                        </div>
+                        <div class="" form__item>
+                           <input type="submit">
+                        </div>
                      </form>
-                 </div>
+                  </div>
 
-                 <!-- Form end -->
+                  <!-- Form end -->
                </div>
                <div class="modal-footer">
                   <button type="button" class="btn btn-secondary button--width" data-bs-dismiss="modal">Закрыть</button>
@@ -184,6 +184,18 @@
       </footer>
 
       <!-- Scripts start -->
+
+      <script>
+
+         const img = document.getElementsByTagName('img');
+
+         for (var i in img) {
+            img[i].oncontextmenu = function () {
+               return false;
+            }
+         }
+
+      </script>
 
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <script src="../js/metrika.js"></script>

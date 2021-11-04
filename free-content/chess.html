@@ -62,25 +62,25 @@
 
                   <div class="consultation">
                      <form class="feed-form" action="##" method="">
-                         <div class=""form__item>
-                             <label for="name">Имя <sup>*</sup></label>
-                             <input name="name" id="name" type="name">
-                         </div>
-                         <div class=""form__item>
-                             <label for="phone">Телефон / whatsapp</label>
-                             <input name="phone" id="phone" type="number">
-                         </div>
-                         <div class=""form__item>
-                             <label for="email">Почта <sup>*</sup></label>
-                             <input name="email" id="email" type="email">
-                         </div>
-                         <div class=""form__item>
-                             <input type="submit">
-                         </div>
+                        <div class="" form__item>
+                           <label for="name">Имя <sup>*</sup></label>
+                           <input name="name" id="name" type="name">
+                        </div>
+                        <div class="" form__item>
+                           <label for="phone">Телефон / whatsapp</label>
+                           <input name="phone" id="phone" type="number">
+                        </div>
+                        <div class="" form__item>
+                           <label for="email">Почта <sup>*</sup></label>
+                           <input name="email" id="email" type="email">
+                        </div>
+                        <div class="" form__item>
+                           <input type="submit">
+                        </div>
                      </form>
-                 </div>
+                  </div>
 
-                 <!-- Form end -->
+                  <!-- Form end -->
                </div>
                <div class="modal-footer">
                   <button type="button" class="btn btn-secondary button--width" data-bs-dismiss="modal">Закрыть</button>
@@ -139,7 +139,11 @@
                <div class="regular__img--wrapper"><img src="../img/dest/chess-without-lines.webp" alt="">
                </div>
             </div>
-            <p class="regular__text" style="padding: 30px 0; margin-top: 30px; border-top: 1px solid #33333323; border-bottom: 1px solid #33333323;">Если хочешь получить полную версию для печати с большим выбором инструкций, пиши в Instagram <a style="text-decoration: underline;" href="https://www.instagram.com/maryannwithlove/">@maryannwithlove</a> "Шахматное поле"</p>
+            <p class="regular__text"
+               style="padding: 30px 0; margin-top: 30px; border-top: 1px solid #33333323; border-bottom: 1px solid #33333323;">
+               Если хочешь получить полную версию для печати с большим выбором инструкций, пиши в Instagram <a
+                  style="text-decoration: underline;"
+                  href="https://www.instagram.com/maryannwithlove/">@maryannwithlove</a> "Шахматное поле"</p>
          </div>
       </div>
    </main>
@@ -195,18 +199,30 @@
 
    <!-- Footer end -->
 
-  <!-- Scripts start -->
-      
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="../js/metrika.js"></script>
-  <script src="../js/form.js"></script>
-  <script src="../js/slick.min.js"></script>
-  <script src="../js/bootstrap.bundle.min.js"></script>
-  <script src="../js/bootstrap.min.js"></script>
-  <script src="../js/jquery.validate.min.js"></script>
-  <script src="../js/script.min.js"></script>
+   <!-- Scripts start -->
 
-  <!-- Scripts end -->
+   <script>
+
+      const img = document.getElementsByTagName('img');
+
+      for (var i in img) {
+         img[i].oncontextmenu = function () {
+            return false;
+         }
+      }
+
+   </script>
+
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="../js/metrika.js"></script>
+   <script src="../js/form.js"></script>
+   <script src="../js/slick.min.js"></script>
+   <script src="../js/bootstrap.bundle.min.js"></script>
+   <script src="../js/bootstrap.min.js"></script>
+   <script src="../js/jquery.validate.min.js"></script>
+   <script src="../js/script.min.js"></script>
+
+   <!-- Scripts end -->
 
 </body>
 
