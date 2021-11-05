@@ -86,10 +86,11 @@ button, input[type="submit"]
    display: flex
    flex-direction: column
    justify-content: flex-end
-   padding-top: 70px
+   padding-top: 115px
    padding-left: 50px
    &__item
       text-align: right
+      padding-bottom: 10px
    &__close
       display: none
       margin-top: 50px
@@ -324,7 +325,7 @@ button, input[type="submit"]
       &:last-child
          border: 0
    &__about
-      margin-top: 60px
+      @include ptmed
       color: #333
       letter-spacing: 2px
 
